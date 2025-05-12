@@ -1,0 +1,29 @@
+[app]
+name = "smart-workspace-backend"
+
+[build]
+image = "node"
+
+[env]
+NODE_ENV = "production"
+PORT = "3000"
+
+[env.production]
+OPENAI_API_KEY = ""
+CLERK_SECRET_KEY = ""
+MONGODB_URI = ""
+
+[deploy]
+branch = "main"
+
+[health]
+path = "/health"
+interval = "30s"
+
+[database]
+name = "smart-workspace-db"
+engine = "mongodb"
+
+[secrets]
+OPENAI_API_KEY = ""
+CLERK_SECRET_KEY = ""

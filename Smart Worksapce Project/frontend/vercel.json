@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "CLERK_PUBLISHABLE_KEY": "@clerk_publishable_key",
+    "REACT_APP_API_URL": "@api_url"
+  }
+}

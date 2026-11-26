@@ -1,49 +1,35 @@
-# Smart Workspace 🚀
+# Smart Workspace
 
-## Overview
-Smart Workspace is an AI-enhanced Notion clone that revolutionizes note-taking and workspace management.
+Smart Workspace is a workspace prototype with AI-assisted
+note-generation, summarization, and tagging functionality.
 
-## 🌟 Features
-- Rich Text Editor with Markdown Support
-- AI-Powered Note Generation
-- Automatic Summarization
-- Smart Tagging
-- Calendar Event Generation
+## Implemented backend code
 
-## 🛠 Tech Stack
-- **Frontend**: React, TypeScript, Tailwind CSS
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
-- **Authentication**: Clerk
-- **AI**: OpenAI API
+- Express API routes for text summarization.
+- AI-assisted structured note generation.
+- AI-assisted tag generation.
+- MongoDB page creation and retrieval.
+- Clerk authentication middleware integration.
 
-## 🚀 Getting Started
+## Verification status
 
-### Prerequisites
-- Node.js (v16+)
-- MongoDB
-- OpenAI API Key
-- Clerk Account
+The features above are present in the inspected backend source.
+Their runtime behavior and frontend integration have not yet been
+documented through a reproducible test run.
 
-### Installation
-1. Clone the repository
-2. Install frontend dependencies: `cd frontend && npm install`
-3. Install backend dependencies: `cd backend && npm install`
-4. Set up environment variables
+## Not yet verified
 
-## 🔐 Environment Variables
-Create `.env` files in both frontend and backend with:
-- `REACT_APP_CLERK_PUBLISHABLE_KEY`
-- `CLERK_SECRET_KEY`
-- `OPENAI_API_KEY`
-- `MONGODB_URI`
+- Complete rich-text editing experience.
+- Calendar-event generation.
+- End-to-end frontend/backend integration.
+- Correct access restrictions for all page operations.
+- Current deployment availability.
 
-## 📦 Running the App
-- Frontend: `npm start`
-- Backend: `npm run dev`
+## Known limitations
 
-## 🤝 Contributing
-Please read CONTRIBUTING.md for details on our code of conduct.
+- Page ownership assignment and authorization need review.
+- AI-generated tags are parsed as JSON and require robust validation.
+- Dependency compatibility and setup instructions need a clean
+  installation check.
 
-## 📄 License
-This project is licensed under the MIT License.
+This project is a prototype, not a production-ready Notion replacement.
